@@ -1,3 +1,69 @@
-body{
-    background-color: red;
+#navbar{
+flex-direction: column;
+flex-wrap: wrap;}
+
+#logo{
+    margin: 10px;
+}
+#navbar  ul li{
+    flex-wrap: wrap;
+    margin: 2px;
+}
+
+#home{
+    /* height: 500px; 
+padding: 3px 28px; */
+}
+#home::before{
+    height: 634px;
+}
+#home h1{
+
+}
+#home p{
+    font-size:15px ;
+}
+#services{
+  flex-direction: column;
+
+}
+.h1primary {
+    font-size: 40px;
+    padding: 0px;
+    margin-top: 227px;
+}
+.hprimary {
+    font-family: 'Dancing Script', cursive;
+    margin: 47px;
+    font-size: 44px;
+    justify-content: center;
+    text-align: center;
+}
+#client-section{
+    height: 500px;
+
+}
+
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    flex-wrap: wrap;
+    width: 100px;
+    height: auto;
+    padding: 0px;
+}
+
+#client-section{
+
+}
+#contactBox{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#contactBox form{
+flex-wrap: wrap;
+    width: 80%;
+
 }

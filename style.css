@@ -1,15 +1,24 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --navbar-height:59px;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 #navbar{
-    margin: -8px;
+    /* margin: -8px; */
     font-family: 'Baloo Bhaijaan 2', cursive;
+    width: 100%;
     padding: 0;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0px;
+    /* z-index: -1; */
 
 }
 #logo{
@@ -25,6 +34,7 @@
 }
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 #navbar::before{
     content:"";
@@ -34,19 +44,22 @@
     width: 100%;
     z-index: -1;
     opacity: 0.4;
+    top: 0px;
 
 }
 
  #navbar ul li{
+  
     display: flex;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 20px;
 
 
 }
 #navbar ul li a{
-    color:black;
-    font-size: 20px;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    color:white;
+    font-size: 25px;
    display: block;
    padding: 3px 22px;
    border-radius: 20px;
@@ -65,22 +78,24 @@
 }
 /* Home Section */
 #home{
+    /* border: 2px solid red; */
     display: flex;
     font-family: 'Bree Serif', serif;
     flex-direction: column;
-    height: 618px;
+    height: 600px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-
+margin-bottom: 200px;
 }
 #home::before{
     content:"";
-    background :url('image/background2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background :url('image/background2.jpg') no-repeat center center/cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     position: absolute;
-    height: 100%;
+    height: 1000px;
+    line-height: 800px;
     width: 100%;
     z-index: -1;
     opacity: 0.9;
@@ -160,14 +175,16 @@
     text-align: center;
     height: 100px;
     width: 100px;
-    background-color:transparent;
+    /* background-color:transparent; */
 }
-#client-section  {
+#client-section{
 
    /* border: 2px solid black; */
-    /* justify-content: center; */
+     /* justify-content: center; */
+    display: flex;
+    width: 100%;
     height: 450px;
-    width: 99%;
+   
     flex-direction: column;
     margin-bottom: 10px;
     padding: 0px;
@@ -191,7 +208,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 99%;
+    width: 100%;
     height: 450px;
     z-index: -1;
     opacity: 0.8;
@@ -223,16 +240,17 @@
    
 }
 #contact::before{
-    display: flex;
+    background: url('image/contact\ us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.9;
-    background: url('image/contact\ us.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     
   
 
